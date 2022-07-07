@@ -46,7 +46,7 @@ func main() {
 			return parseErr
 		}
 		cache.Cache.Set(id, todo)
-		return c.JSON(fiber.Map{"Data": todo})
+		return c.JSON(fiber.Map{"data": todo})
 	})
 
 	// Server hosted on localhost:3000
